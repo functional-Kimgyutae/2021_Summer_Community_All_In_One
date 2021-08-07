@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+        <script src="../../js/jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" href="../../css/app.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <title>학생 회원가입 페이지</title>
+    </head>
+    <body>
+        <div id="app">
+            <!-- 회원가입 입력 폼 -->
+            <p style="border:1px solid #777; padding:10px; text-align:center;">학생</p>
+            <div class="mb-3 row">
+                <label for="name" class="col-sm-2 col-form-label">이름</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" v-model:value="name" name="">
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <label for="id" class="col-sm-2 col-form-label">아이디</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="id" v-model:value="id">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">이메일</label>
+                <div class="col-sm-10">
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="staticEmail"
+                        v-model:value="email"
+                        required="required">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">비밀번호</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="pwd" v-model:value="pwd">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">비밀번호 확인</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="pwdCh" v-model:value="pwdCh">
+                </div>
+            </div>
+            <!-- 학과 선택 (과,학년,반,번호) -->
+            <p class="check-text">{{ checkText }}</p>
+
+            <select name="과" id="" v-model='department'>
+                <option value="소프트웨어개발">소프트웨어개발과</option>
+                <option value="전자제어">전자제어과</option>
+                <option value="전자통신">전자통신과</option>
+                <option value="바이오">바이오학과</option>
+            </select>
+
+            <select name="" id="" v-model='grade'>
+                <option value="1">1학년</option>
+                <option value="2">2학년</option>
+                <option value="3">3학년</option>
+            </select>
+
+            <select name="" id="" v-model='classNum'>
+                <option value="1">1반</option>
+                <option value="2">2반</option>
+            </select>
+
+            번호 :
+            <input
+                type="number"
+                v-model='number'
+                class="select-input"
+                style="width:100px;"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+
+            <input type="submit" value="회원가입 하기" id="submit" v-on:click="Submit">
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <script>
+            const log = console.log;
+            const app = new Vue({
+                el: '#app',
+                data: {
+                    department: '',
+                    grade: '',
+                    classNum: '',
+                    number: '',
+                    name: 'name입력',
+                    email: '',
+                    id: 'id입력',
+                    email: 'email입력',
+                    pwd: 'password 입력',
+                    pwdCh: ''
+                },
+                computed: {
+                    /* 자신이 선택한 값 확인해주는 text */
+                    checkText() {
+                        const {department, grade, classNum, number} = this;
+                        return `${department}과 ${grade}학년 ${classNum}반 번호 : ${number}`;
+                    }
+                },
+                methods: {
+                    /* 회원가입 입력 값 체크 */
+                    Submit() {
+                        const {name, email, id, pwd, pwdCh} = this;
+                        let ch = /^[a-zA-Z0-9~!@#$%^&*()_+|<>?:{}]+$/;
+                        let ch2 = /^[a-zA-Z0-9가-힣]+$/;
+
+                        if (name == "" || email == "" || id == "" || pwd == "" || pwdCh == "") {
+                            alert('비어있음');
+                        } else {
+
+                            if (ch.test(name)) 
+                                alert('이름은 한글만 가능');
+                            
+                            if (!ch2.test(id)) 
+                                alert('아이디는 영문자, 특수문자, 숫자만 가능');
+                            
+                            if (pwd.length > 4) 
+                                alert('비밀번호는 4자 이상');
+                            
+                            if (!ch2.test(pwd)) 
+                                alert('비밀번호는 영문자, 특수문자, 숫자만 가능');
+                            
+                            if (pwd != pwdCh) 
+                                alert('비밀번호 확인과 틀림');
+                            }
+                        }
+
+                }
+            });
+
+            /* 번호 입력 시 2자리까지만 가능하게 하는 함수 */
+            function maxLengthCheck(ob) {
+                if (ob.value.length > 2) {
+                    ob.value = ob
+                        .value
+                        .slice(0, 2);
+                }
+            }
+        </script>
+    </body>
+</html>

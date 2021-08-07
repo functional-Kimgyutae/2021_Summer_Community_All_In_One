@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>게시판</title>
+</head>
+
+<body>
+    <header class="flex-column-around">
+        <div class="phoName">
+            <!-- 사용자 이미지, 확과, 이름 표시 -->
+            <div class="profile">
+                <img src="../../image/human.png" alt="">
+                <!-- 사용자 이미지-->
+            </div>
+
+            <div class="userPri flex-column-center">
+                <!-- 사용자 학과, 이름 -->
+                <b>소프트웨어개발과</b>
+                <b>김규태</b>
+            </div>
+        </div>
+        <!-- end phoName -->
+
+        <nav>
+            <!-- 메뉴 -->
+            <ul>
+                <li><a href="../index.html"><b>메인페이지</b></a></li>
+                <li><a href="../school_event/school_event.html"><b>학교 행사</b></a></li>
+                <li><a href="../notice/notice.html"><b>공지 사항</b></a></li>
+                <li><a href="../lunch/lunch.html"><b>급식일정표</b></a></li>
+                <li><a href="../board/board.html"><b>게시판</b></a></li>
+                <li><a href="../class/class_page.html"><b>반 페이지</b></a></li>
+                <li><a href="../calendar/calendar.html"><b>학사 일정</b></a></li>
+                <li><a href="../profile/profile.html"><b>내 계정</b></a></li>
+            </ul>
+        </nav>
+        <!-- end nav -->
+
+        <div class="h-footer flex-column-center">
+            <!-- 로그아웃, 푸터 -->
+            <a href="#">로그아웃</a> <br>
+            <p>COPYRIGHT ⓒ 양영디지털고등학교</p>
+            <p>ALL RIGHTS RESERVED</p>
+        </div>
+        <!-- end h-footer -->
+    </header>
+    <section id="boardWrite">
+
+        <div id="boardWrite-body">
+            <div id="boardWrite-title">
+                <h3>제목 :</h3> <input type="text" name="" id="">
+            </div>
+            <div id="boardWrite-user">
+                <h3> 작성자 : XXX</h3>
+            </div>
+            <div id="boardWrite-file">
+                이미지 : <input type="button" value="이미지 삽입"> 글자 색 : <input type="button" value="글자 색"> 글자 크기 : <input type="button" value="글자 크기"> 링크 삽입 : <input type="button" value="하이퍼링크"> 정렬 : <input type="button" value="정렬">
+            </div>
+            <div id="boardWrite-write">
+                <textarea name="" id="boardWrite-write-text"></textarea>
+            </div>
+            <div id="boardWrite-input">
+                <input type="submit" value="작성">
+                <input type="button" value="저장">
+                <input type="reset" value="초기화">
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

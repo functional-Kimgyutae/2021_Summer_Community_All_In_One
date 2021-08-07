@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: "noto";
+}
+
+
+/* flex */
+
+body {
+    display: flex;
+}
+
+
+/* 세로 정렬(around)*/
+
+.flex-column-around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* 세로 정령(center) */
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* header start */
+
+header {
+    width: 20vw;
+    height: 100vh;
+}
+
+
+/* phoName start*/
+
+.phoName {
+    width: 18vmin;
+    margin: 0 auto;
+}
+
+.profile {
+    width: 100%;
+    height: 18vmin;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.userPri {
+    width: 19vmin;
+    height: 7vmin;
+    margin: 0 auto;
+}
+
+.userPri b {
+    font-size: 1vmax;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* phoName end */
+
+
+/* nav start */
+
+nav {
+    width: 18vmin;
+}
+
+nav ul {
+    width: 100%;
+    margin-top: 6vmin;
+}
+
+nav li {
+    width: 100%;
+    margin-bottom: 1.5vmax;
+}
+
+nav li b {
+    font-size: 1vmax;
+}
+
+
+/* nav end */
+
+
+/* h-footer start */
+
+.h-footer {
+    width: 34vmin;
+    font-size: 0.9vmax;
+}
+
+
+/* h-footer end */
+
+
+/* notice start */
+
+#notice {
+    width: 80vw;
+    height: 100vh;
+}
+
+#notice-body {
+    width: 70vw;
+    height: 90vh;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin: 10px auto;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#notice-title {
+    height: 40px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+table {
+    border-collapse: collapse;
+    text-indent: initial;
+}
+
+#notice-table * {
+    width: 30vw;
+    text-align: center;
+}
+
+tr {
+    border-bottom: 0.6px solid #000;
+}
+
+#notice-number {
+    display: flex;
+    width: 70vw;
+    height: 60px;
+}
+
+#notice-number {
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* notice end */
+
+
+/* board start */
+
+#board {
+    width: 80vw;
+    height: 100vh;
+}
+
+#board-body {
+    width: 70vw;
+    height: 90vh;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin: 10px auto;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#board-title {
+    height: 40px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+table {
+    border-collapse: collapse;
+    text-indent: initial;
+}
+
+#board-table * {
+    width: 30vw;
+    text-align: center;
+}
+
+#board-number {
+    display: flex;
+    width: 70vw;
+    height: 60px;
+}
+
+#board-number {
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* board end */
+
+
+/* boardView start */
+
+#boardView {
+    width: 80vw;
+    height: 100vh;
+}
+
+#boardView-body {
+    width: 70vw;
+    height: 100vh;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin: 10px auto;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#boardView-Title-user {
+    display: flex;
+    justify-content: space-between;
+}
+
+#boardView-main {
+    height: 200px;
+}
+
+#boardView-main-vote {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#boardView-main-vote-btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: #ededed;
+    font-size: 16px;
+}
+
+#boardView-main-vote-btn:nth-child(2) {
+    margin-left: 30px;
+}
+
+#boardView-comment-title {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+}
+
+#bv-comment-list {
+    width: 70px;
+}
+
+#boaradView-comment-main {
+    border-top: 1px solid #000;
+}
+
+#boaradView-comment-main li {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#boaradView-comment-main li button {
+    width: 60px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#boardView-comment {
+    height: 100px;
+}
+
+#boardView-comment-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#boardView-comment-text {
+    width: 95%;
+    height: 177px;
+    border-radius: 25px;
+    resize: none;
+    padding-top: 20px;
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+#boardView-comment-submit {
+    width: 90px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+
+/* boardView end */
+
+
+/* boardWrite start */
+
+#boardWrite {
+    width: 80vw;
+    height: 100vh;
+}
+
+#boardWrite-body {
+    width: 70vw;
+    height: 90vh;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin: 10px auto;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#boardWrite-title {
+    width: 60vw;
+    height: 50px;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+#boardWrite-title input {
+    margin-left: 10px;
+    width: 40vw;
+}
+
+#boardWrite-user {
+    width: 40vw;
+    height: 50px;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+#boardWrite-file {
+    width: 50vw;
+    height: 50px;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+#boardWrite-file * {
+    margin-right: 50px;
+}
+
+#boardWrite-write-text {
+    width: 69vw;
+    height: 55vh;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    border: none;
+    resize: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#boardWrite-input {
+    width: 69vw;
+    height: 50px;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+
+#boardWrite-input input {
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+
+/* boardWrite end */
+
+
+/*DCalendar start*/
+
+#DCalendar {
+    width: 80vw;
+    height: 100vh;
+}
+
+#DCalendar-body {
+    width: 70vw;
+    height: 90vh;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin: 10px auto;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+}
+
+#Dcalendar-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Dcalendar-a {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Dcalendar-main {
+    width: 66vw;
+    height: 80vh;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#Dcalendar-box {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #000;
+}
+
+#Dcalendar-input {
+    width: 50vw;
+}
+
+
+/*DCalendar end*/

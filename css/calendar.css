@@ -1,0 +1,53 @@
+/* calendar start */
+
+.cal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+/* .cal-top {
+    
+} */
+.cal-top > h1 {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.cal-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cal-box > h2 {
+    margin: 20px 10px;
+}
+.cal-box > button {
+    border: 0;
+    outline: 0;
+}
+.cal-box  i {
+    font-size: 30px;
+    color: #bababa;
+    background-color: whitesmoke;
+}
+.cal-group {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.cal-group > div {
+    width: 140px;
+    border: 2px solid #eaeaea;
+    border-radius: 5px;
+}
+.cal-day {
+    text-align: center;
+    width: 20px;
+    background-color: #f0f0f0;
+}
+.cal-date {
+    height: 80px;
+}
+
+/* calendar end */

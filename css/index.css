@@ -1,0 +1,342 @@
+#mainPage{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+#mainPage img{
+    width: 50px;
+    height: 50px;
+}
+
+/* bordMain start */
+
+#mainPage .boardMain{
+    width: 100%;
+    height: 100%;
+}
+
+#mainPage .mBoard{
+    width: 46vmin;
+    height: 40vmin;
+    background-color: #fff;
+}
+
+#mainPage .mBoard .mSmallContainer{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.6rem;
+}
+
+/* mBoardHead start */
+
+#mainPage .mBoardHead{
+    width: 100%;
+    height: 5vmin;
+    grid-column: 1/3;
+    border-bottom: 0.3vmin solid #000;
+    display: flex;
+    align-self: center;
+}
+
+#mainPage .mBoardHead a{
+    font-size: 1.2vmax;
+    font-weight: bold;
+}
+
+/* mBoardHead end */
+
+/* mSecretB, mBoteB start */
+
+#mainPage .boardMain .mSmallContainer .item{
+    width: 20vmin;
+    height: 15vmin;
+}
+
+#mainPage .boardMain .mSmallContainer .item a{
+    width: 20vmin;
+    height: 15vmin;
+}
+
+#mainPage .boardMain .mSmallContainer .item a img{
+    align-self: flex-start;
+    width: 12vmin;
+    height: 12vmin;
+}
+
+#mainPage .boardMain .mSmallContainer .item a p{
+    width: 100%;
+    text-align: end;
+    font-size: 0.9vmax;
+    font-weight: bold;
+}
+
+/* mSchoolB start */
+
+#mainPage .mSchoolB{
+    grid-column: 1/3;
+    position: relative;
+}
+
+#mainPage .mSchoolB a img{
+    width: 100%;
+    height: 13vmin;
+    opacity: 0.7;
+    object-fit: cover;
+}
+
+#mainPage .mSchoolB a p{
+    position: absolute;
+    top: 0.3rem;
+    left: 0.2rem;
+    font-size: 1vmax;
+    font-weight: bold;
+}
+
+/* mSchoolB end */
+
+/* mBoardSup(mBestB) start */
+
+#mainPage .mBoardSup{
+    width: 100%;
+    height: 100%;
+}
+
+#mainPage .mBestB{
+    width: 40vmin;
+    height: 40vmin;
+    background-color: #fff;
+}
+
+#mainPage .mBestB .mSmallContainer{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.6rem;
+    justify-self: flex-start;
+}
+
+
+#mainPage .mBestB .mBestBHead{
+    width: 100%;
+    height: 5vmin;
+    grid-column: 1/3;
+    border-bottom: 0.3vmin solid #000;
+    display: flex;
+    align-self: flex-start;
+}
+
+#mainPage .mBestB .mBestBHead a{
+    display: flex;
+    align-items: center;
+}
+
+#mainPage .mBestB .mBestBHead a p{
+    font-size: 1.1vmax;
+    font-weight: bold;
+}
+
+#mainPage .mBestB .mBestText{
+    width: 22vmin;
+    height: 20vmin;
+}
+
+#mainPage .mBestB .mBestText .mBestInText a{
+    font-size: 1.2vmax;
+    font-weight: 600;
+}
+
+#mainPage .mBestB .mBestText .mBestInText p{
+    font-size: 0.9vmax;
+    line-height: 2rem;
+}
+
+#mainPage .mBestB .mBestText .mBestInImg{
+    display: flex;
+    align-self: flex-start;
+}
+
+#mainPage .mBestB .mBestText .mBestInImg img{
+    width: 6vmin;
+    height: 6vmin;
+    padding-right: 1rem;
+}
+
+#mainPage .mBestB .mBestImg{
+    width: 100%;
+    height: 20vmin;
+}
+
+#mainPage .mBestB .mBestImg img{
+    width: 10vmin;
+    height: 10vmin;
+}
+
+/* mBoardSup(mBestB) end */
+
+/* timesMain start */
+
+#mainPage .timesMain{
+    width: 100%;
+    height: 100%;
+}
+
+#mainPage .mTime{
+    width: 100%;
+    height: 90%;
+    background-color: #fff;
+}
+
+#mainPage .timesMain .mTimesHead{
+    width: 90%;
+    height: 8vmin;
+    border-bottom: 0.3vmin solid #000;
+}
+
+#mainPage .timesMain .mTimesHead p{
+    font-size: 1vmax;
+    font-weight: bold;
+}
+
+#mainPage .timesMain .mTimesHead a{
+    font-size: 1vmax;
+}
+
+#mainPage .timesMain table{
+    width: 90%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+#mainPage .timesMain table td{
+    text-align: center;
+    font-size: 1vmax;    
+}
+
+#mainPage .timesMain table tr{
+    border-bottom: 0.1rem solid rgba(121, 121, 121, 0.274);
+}
+
+/* timesMain end */
+
+/* noticeMain start*/
+
+#mainPage .noticeMain{
+    width: 95%;
+    height: 95%;
+}
+
+#mainPage .noticeMain .mNotice{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+#mainPage .noticeMain .mNotice .mSmallContainer{
+    width: 100%;
+    height: 100%;
+}
+
+#mainPage .noticeMain .mNotice .mNoticHead{
+    width: 90%;
+    height: 7vmin;
+}
+
+#mainPage .noticeMain .mNotice .mNoticHead p{
+    font-size: 1.3vmax;
+    font-weight: bold;
+}
+
+#mainPage .noticeMain .mNotice .mNoticHead a{
+    font-size: 1vmax;
+}
+
+#mainPage .noticeMain .mNotice table{
+    width: 90%;
+    border-collapse: collapse;
+}
+
+#mainPage .noticeMain .mNotice td{
+    text-align: center;
+    font-size: 1vmax;
+    height: 4vmin;
+}
+
+#mainPage .noticeMain .mNotice tr{
+    border-bottom: 0.1vmin solid rgba(121, 121, 121, 0.274);
+}
+
+#mainPage .noticeMain .mNotice .noticeTr{
+    border-top: 0.3vmin solid rgba(121, 121, 121, 0.397);
+    border-bottom: 0.3vmin solid rgba(121, 121, 121, 0.397);
+}
+/* noticeMain end*/
+
+/* dayMain start */
+
+#mainPage .dayMain{
+    width: 100%;
+    height: 95%;
+}
+
+#mainPage .dayMain .mLunch{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+#mainPage .dayMain .mLunch .mSmallContainer{
+    width: 90%;
+    height: 90%;
+}
+
+#mainPage .dayMain .mLunch .mLunchHead{
+    width: 100%;
+    height: 5vmin;
+    border-bottom: 0.3vmin solid #000;
+}
+
+#mainPage .dayMain .mLunch .mLunchHead p{
+    font-size: 1.4vmax;
+    font-weight: bold;
+}
+
+#mainPage .dayMain .mLunch .mLunchHead a{
+    font-size: 1vmax;
+}
+
+#mainPage .dayMain .mLunch .mLunchList{
+    width: 80%;
+    height: 90%;
+}
+
+#mainPage .dayMain .mLunch .mLunchList .img{
+    width: 15vmin;
+    height: 15vmin;
+}
+
+#mainPage .dayMain .mLunch .mLunchList .img img{
+    width: 100%;
+    height: 100%;
+}
+
+#mainPage .dayMain .mLunch li{
+    text-align: center;
+    font-size: 1.2vmax;
+}
+
+/* dayMain end */
+
+/* noticeMain start */
+
+#mainPage .noticeMain{
+    grid-column: 1/3;
+}
+
+/* noticeMain end */

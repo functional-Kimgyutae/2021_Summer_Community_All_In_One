@@ -1,0 +1,87 @@
+.container {
+    width: 80vw;
+    height: 100vh;
+}
+
+#profile_page {
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 2rem;
+    overflow-y: auto;
+    font-size: 2vmin;
+}
+#profile_page::-webkit-scrollbar {
+    display: none;
+}
+#profile_page #profile_table {
+    width: 90%;
+    max-height: 400px;
+    min-height: 200px;
+    margin: 20px 5%;
+}
+
+#profile_page > #profile_table h2 {
+    font-weight: 500;
+}
+
+#profile_page > #profile_table .table_one {
+    width: 20%;
+}
+
+#profile_page > #profile_table .table_two {
+    width: 70%;
+}
+#profile_page > #profile_table .table_thr {
+    width: 10%;
+}
+
+#profile_page > #profile_table .profile_img {
+    width: 12vmin;
+    height: 12vmin;
+    border-radius: 10px;
+    background-color: #333;
+    border: none;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+#profile_page #my_board {
+    width: 90%;
+    min-height: 150px;
+    max-height: 250px;
+    margin: 20px 5%;
+    overflow-y: auto;
+}
+#profile_page #my_board > table {
+    width: 100%;
+}
+#profile_page #my_board > table th{
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+}
+
+#profile_page #question {
+    width: 90%;
+    min-height: 150px;
+    max-height: 250px;
+    margin: 20px 5%;
+    overflow-y: auto;
+}
+#profile_page #question > table {
+    width: 100%;
+}
+#profile_page #question > table th{
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+}
+
+#profile_page .text_center {
+    text-align: center;
+}
+#profile_page .h2 {
+    margin-left: 5%;
+}

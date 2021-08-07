@@ -1,0 +1,21 @@
+#app {
+    width:80%;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+select, .select-input{
+    border-radius: 3px;
+    padding: 5px 10px;
+    border:1px solid #ddd;
+}
+
+.check-text {
+    padding:10px;
+    background-color: #ddd;
+}
+
+#submit {
+    float: right;
+}

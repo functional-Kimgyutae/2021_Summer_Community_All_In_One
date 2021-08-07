@@ -1,0 +1,29 @@
+.container {
+    width: 80vw;
+    height: 100vh;
+}
+
+#admin_page {
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 2rem;
+    overflow-y: auto;
+    font-size: 2vmin;
+}
+
+#admin_page > div > div > h2 {
+    font-weight: 300;
+    margin: 10px 0px;
+}
+
+#admin_page  #user_table {
+    text-align: center;
+    width: 80%;
+}
+
+#admin_page  #report {
+    text-align: center;
+    width: 80%;
+}

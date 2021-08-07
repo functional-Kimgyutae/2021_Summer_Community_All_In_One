@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <title>메인페이지</title>
+</head>
+
+<body>
+    <header class="flex-column-around">
+        <div class="phoName"> <!-- 사용자 이미지, 확과, 이름 표시 -->
+            <div class="profile">
+                <img src="../../image/human.png" alt=""> <!-- 사용자 이미지-->
+            </div>
+
+            <div class="userPri flex-column-center"> <!-- 사용자 학과, 이름 -->
+                <b>소프트웨어개발과</b>
+                <b>김규태</b>
+            </div>
+        </div><!-- phoName end-->
+
+        <nav> <!-- 메뉴 -->
+            <ul>
+                <li><a href="../index.html"><b>메인페이지</b></a></li>
+                <li><a href="../school_event/school_event.html"><b>학교 행사</b></a></li>
+                <li><a href="../notice/notice.html"><b>공지 사항</b></a></li>
+                <li><a href="../lunch/lunch.html"><b>급식일정표</b></a></li>
+                <li><a href="../board/board.html"><b>게시판</b></a></li>
+                <li><a href="../class/class_page.html"><b>반 페이지</b></a></li>
+                <li><a href="../calendar/calendar.html"><b>학사 일정</b></a></li>
+                <li><a href="../profile/profile.html"><b>내 계정</b></a></li>
+            </ul>
+        </nav> <!-- nav end -->
+
+        <div class="h-footer flex-column-center"> <!-- 로그아웃, 푸터 -->
+            <a href="#">로그아웃</a> <br>
+            <p>COPYRIGHT ⓒ 양영디지털고등학교</p>
+            <p>ALL RIGHTS RESERVED</p>
+        </div> <!-- h-footer end -->
+    </header>
+
+    <section> <!-- section start -->
+        <div id="mainPage"> <!-- 메인페이지(id) -->
+            
+            <div class="boardMain flex-center"> <!-- 메인페이지 안의 게시판 -->
+                
+                <div class="mBoard border-radius-2vmin box-shadow flex-column-center"> <!-- 메인페이지 게시판 -->
+                    <div class="mSmallContainer">
+                    
+                        <div class="mBoardHead"> <!-- 메인페이지 보드의 헤더 -->
+                            <a href="../board/board.html">게시판</a>
+                        </div>
+
+                        <div class="mSecretB item"> <!-- 메인페이지 익명 게시판 -->
+
+                            <a href="#">
+                                <img src="../../image/human.png" alt="">
+                                <p>익명 게시판</p>
+                            </a>
+
+                        </div>
+
+                        <div class="mVoteB item"> <!-- 메인페이지 투표 게시판 -->
+
+                            <a href="#">
+                                <img src="../../image/human.png" alt="">
+                                <p>투표 게시판</p>
+                            </a>
+
+                        </div>
+
+                        <div class="mSchoolB"> <!-- 학교 게시판 -->
+
+                            <a href="#">
+                                <img src="../../image/school.jpg" alt="">
+                                <p>학교 게시판</p>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- boardMain end  -->
+
+            <div class="mBoardSup flex-center"> <!-- 메인페이지 최고의 게시판 -->
+                <div class="mBestB border-radius-2vmin box-shadow flex-column-center"><!-- 최고의 게시판 -->
+                    <div class="mSmallContainer">
+                        
+                        <div class="mBestBHead"> <!-- 메인페이지 최고의 게시판 헤더 -->
+                            <a href="#" class="mBestBHeadA">
+                                <p>오늘의 베스트 게시글</p>
+                            </a>
+                        </div>
+
+                        <div class="mBestText flex-column-between"> <!-- 메인페이지 최괴의 게시판 제목과 이름 -->
+
+                            <div class="mBestInText">
+                                <a href="#">얘들아 그거 알아?</a>
+                                <p>익명</p>
+                            </div>
+
+                            <div class="mBestInImg">
+                                <img src="../../image/human.png" alt="">
+                                <img src="../../image/human.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="mBestImg flex-center"> <!-- 메인페이지 최고의 게시물 이미지 -->
+                            <img src="../../image/human.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="timesMain flex-center"> <!-- 메인페이지시간표 -->
+                <div class="mTime border-radius-2vmin box-shadow flex-column-center">
+                    <div class="mTimesHead flex-center-between">
+                        <p>시간표</p>
+                        <a href="#">+더보기</a>
+                    </div>
+
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>월</td>
+                            <td>화</td>
+                            <td>수</td>
+                            <td>목</td>
+                            <td>금</td>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>점심</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                            <td>국어</td>
+                    </tr>
+                    </table>
+                </div>
+
+            </div> <!-- times end -->
+
+            <div class="noticeMain"> <!-- 메인페이지 공지사항 -->
+                <div class="mNotice border-radius-2vmin box-shadow flex-center">
+                    <div class="mSmallContainer flex-column-center">
+
+                        <div class="mNoticHead flex-center-between">
+                            <p>공지사항</p>
+                            <a href="../notice/notice.html">+더보기</a>
+                        </div>
+
+                        <table>
+                    <tr class="noticeTr">
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>작성일</th>
+                    </tr>
+
+                    <tr>
+                        <td>250</td>
+                        <td>[일반]교원 능력 주민참여 의견 성취 공모전 안내</td>
+                        <td>곽두팔</td>
+                        <td>2021/10/18</td>
+                    </tr>
+                    <tr>
+                        <td>250</td>
+                        <td>[일반]교원 능력 주민참여 의견 성취 공모전 안내</td>
+                        <td>곽두팔</td>
+                        <td>2021/10/18</td>
+                    </tr>
+                    <tr>
+                        <td>250</td>
+                        <td>[일반]교원 능력 주민참여 의견 성취 공모전 안내</td>
+                        <td>곽두팔</td>
+                        <td>2021/10/18</td>
+                    </tr>
+                    <tr>
+                        <td>250</td>
+                        <td>[일반]교원 능력 주민참여 의견 성취 공모전 안내</td>
+                        <td>곽두팔</td>
+                        <td>2021/10/18</td>
+                    </tr>
+                    <tr>
+                        <td>250</td>
+                        <td>[일반]교원 능력 주민참여 의견 성취 공모전 안내</td>
+                        <td>곽두팔</td>
+                        <td>2021/10/18</td>
+                    </tr>
+                    <tr>
+                        <td>250</td>
+                        <td>[일반]교원 능력 주민참여 의견 성취 공모전 안내</td>
+                        <td>곽두팔</td>
+                        <td>2021/10/18</td>
+                    </tr>
+                    <tr>
+                        <td>250</td>
+                        <td>[일반]교원 능력 주민참여 의견 성취 공모전 안내</td>
+                        <td>곽두팔</td>
+                        <td>2021/10/18</td>
+                    </tr>
+                    <tr>
+                        <td>250</td>
+                        <td>[일반]교원 능력 주민참여 의견 성취 공모전 안내</td>
+                        <td>곽두팔</td>
+                        <td>2021/10/18</td>
+                    </tr>
+                    <tr>
+                        <td>250</td>
+                        <td>[일반]교원 능력 주민참여 의견 성취 공모전 안내</td>
+                        <td>곽두팔</td>
+                        <td>2021/10/18</td>
+                    </tr>
+                        </table>
+
+                    </div>
+                </div>
+            </div> <!-- notice end -->
+            
+            <div class="dayMain flex-center"> <!-- 메인페이지 오늘의 식단 -->
+
+                <div class="mLunch border-radius-2vmin box-shadow flex-center">
+                    
+                    <div class="mSmallContainer flex-column-between">
+                        <div class="mLunchHead flex-center-between">
+                            <p>오늘의 식단</p>
+                            <a href="../lunch/lunch.html">+더보기</a>
+                        </div>
+
+                        <a href="#" class="mLunchList flex-center-between">
+                            <div class="img">
+                                <img src="../../image/human.png" alt="">
+                            </div>
+
+                            <ul>
+                                <li>밥</li>
+                                <li>프로틴</li>
+                                <li>닭가슴살</li>
+                                <li>웨어프로틴</li>
+                                <li>삶은달걀</li>
+                            </ul>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div> <!-- day end -->
+
+        </div>
+    </section>
+</body>
+
+</html>

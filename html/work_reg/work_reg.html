@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/work_reg.css">
+    <title>과제 등록</title>
+</head>
+
+<body>
+    <header class="flex-column-around">
+        <div class="phoName">
+            <!-- 사용자 이미지, 확과, 이름 표시 -->
+            <div class="profile">
+                <img src="../../image/human.png" alt=""> <!-- 사용자 이미지-->
+            </div>
+
+            <div class="userPri flex-column-center">
+                <!-- 사용자 학과, 이름 -->
+                <b>소프트웨어개발과</b>
+                <b>김규태</b>
+            </div>
+        </div><!-- phoName end-->
+
+        <nav>
+            <!-- 메뉴 -->
+            <ul>
+                <li><a href="../index.html"><b>메인페이지</b></a></li>
+                <li><a href="../school_event/school_event.html"><b>학교 행사</b></a></li>
+                <li><a href="../notice/notice.html"><b>공지 사항</b></a></li>
+                <li><a href="../lunch/lunch.html"><b>급식일정표</b></a></li>
+                <li><a href="../board/board.html"><b>게시판</b></a></li>
+                <li><a href="../class/class_page.html"><b>반 페이지</b></a></li>
+                <li><a href="../calendar/calendar.html"><b>학사 일정</b></a></li>
+                <li><a href="../profile/profile.html"><b>내 계정</b></a></li>
+            </ul>
+        </nav> <!-- nav end -->
+
+        <div class="h-footer flex-column-center">
+            <!-- 로그아웃, 푸터 -->
+            <a href="#">로그아웃</a> <br>
+            <p>COPYRIGHT ⓒ 양영디지털고등학교</p>
+            <p>ALL RIGHTS RESERVED</p>
+        </div> <!-- h-footer end -->
+    </header>
+
+    <section>
+        <div id="workReg" class="flex-column-between">
+
+            <div class="workRegHead flex-center">
+                <h3>과제 등록</h3>
+            </div>
+
+            <form action="#" method="POST" class="flex-column-between">
+
+                <div class="workRegContainer flex-column-between">
+
+                    <div class="workName"> <!-- 과제 제목 -->
+                        <input type="text" placeholder="제목">
+                    </div>
+
+                    <div class="workInit"> <!-- 과제 내용 -->
+                        <input type="text" placeholder="과제 넣기">
+                    </div>
+
+                </div>
+
+                <div class="workRegBtn">
+
+                    <input type="reset" value="취소" class="box-shadow">
+                    <input type="submit" value="제출" class="box-shadow">
+
+                </div>
+
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
